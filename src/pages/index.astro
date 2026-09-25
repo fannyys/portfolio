@@ -1,8 +1,12 @@
 ---
-import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
 import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
-import { projects } from '../data/projects';
+
+const projects = (await getCollection('projects'))
+  .filter((project) => project.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout
@@ -32,31 +36,37 @@ import { projects } from '../data/projects';
 
 			<section class="projects" id="work">
 				<div class="projects-grid">
-					{
-						projects.map((project, index) => (
-							<a class="project-link" href={project.href}>
-								<article class={`project-card ${project.background}`}>
-									<div class="project-header">
-										<p class="project-name">{project.name}</p>
-									</div>
-									<h2 class="project-title">{project.title}</h2>
+				{
+  projects.map((project, index) => (
+    <a
+      class="project-link"
+      href={`/work/${project.id}`}
+    >
+      <article class={`project-card ${project.data.background}`}>
+        <div class="project-header">
+          <p class="project-name">
+            {project.data.client ?? project.data.year}
+          </p>
+        </div>
 
-									<div class={`project-visual ${project.variant}`}>
-										<Image
-											class={project.imageClass}
-											src={project.image}
-											alt={project.alt}
-											loading={index < 2 ? 'eager' : 'lazy'}
-											decoding="async"
-											widths={[480, 720, 960]}
-											sizes="(max-width: 980px) 100vw, 50vw"
-										/>
-									</div>
-								</article>
-							</a>
-						))
-					}
-				</div>
+        <h2 class="project-title">
+          {project.data.title}
+        </h2>
+
+        <div class="project-visual">
+          <img
+            class="project-preview-image"
+            src={`${import.meta.env.BASE_URL}${project.data.coverImage}`}
+            alt={project.data.coverAlt}
+            loading={index < 2 ? 'eager' : 'lazy'}
+            decoding="async"
+          />
+        </div>
+      </article>
+    </a>
+  ))
+}
+</div>
 			</section>
 
 		</main>

@@ -7,7 +7,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 ---
 
 <header class="shared-header">
-	<a class="shared-brand" href="/" aria-label={`${siteConfig.name} homepage`}>
+	<a class="shared-brand" href={import.meta.env.BASE_URL} aria-label={`${siteConfig.name} homepage`}>
 		<span class="shared-brand-mark">{siteConfig.name}</span>
 	</a>
 
@@ -28,7 +28,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 					aria-controls={menuPanelId}
 				>
 					<span>Other</span>
-					<img src="/icons/chevron-down.svg" alt="" width="16" height="16" />
+					<img src={`${import.meta.env.BASE_URL}icons/chevron-down.svg`} alt="" width="16" height="16" />
 				</button>
 				<div class="shared-menu-panel" id={menuPanelId} role="menu" aria-label="More navigation pages">
 					{siteConfig.extraPages.map((link) => (
@@ -96,7 +96,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 			</summary>
 
 			<nav class="shared-mobile-panel" id={mobileMenuPanelId} aria-label="Mobile navigation">
-				<a class="shared-mobile-brand" href="/" aria-label={`${siteConfig.name} homepage`}>
+				<a class="shared-mobile-brand" href={import.meta.env.BASE_URL} aria-label={`${siteConfig.name} homepage`}>
 					{siteConfig.name}
 				</a>
 
@@ -109,7 +109,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 						aria-controls={mobileSubmenuPanelId}
 					>
 						<span>Other</span>
-						<img src="/icons/chevron-down.svg" alt="" width="16" height="16" />
+						<img src={`${import.meta.env.BASE_URL}icons/chevron-down.svg`} alt="" width="16" height="16" />
 					</summary>
 					<div class="shared-mobile-submenu-panel" id={mobileSubmenuPanelId}>
 						{siteConfig.extraPages.map((link) => <a href={link.href}>{link.label}</a>)}

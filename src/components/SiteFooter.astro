@@ -12,7 +12,7 @@ const currentYear = new Date().getFullYear();
 				<div class="shared-footer-cta">
 					<h2>Got something worth building? I'd love to hear about it.</h2>
 					<p>
-						Check my <a class="shared-footer-inline-link" href="/resume">resume</a> or reach out directly if something here sparked an idea.
+						Check my <a class="shared-footer-inline-link" href={`${import.meta.env.BASE_URL}resume`}>resume</a> or reach out directly if something here sparked an idea.
 					</p>
 					<a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
 				</div>

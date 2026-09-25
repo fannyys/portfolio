@@ -1,12 +1,14 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
-import { projects, workPageSize } from '../../data/projects';
 
-const page = 1;
-const totalPages = Math.ceil(projects.length / workPageSize);
-const visibleProjects = projects.slice(0, workPageSize);
+const projects = (await getCollection('projects'))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const visibleProjects = projects;
 ---
 
 <Layout
@@ -27,36 +29,43 @@ const visibleProjects = projects.slice(0, workPageSize);
 			<section class="works-list" aria-label="Project list">
 				{
 					visibleProjects.map((project) => (
-						<article class="work-card">
-							<div class="work-copy">
-								<p class="work-name">{project.name}</p>
-								<h2>{project.title}</h2>
-								<p class="work-description">{project.description}</p>
+					<article class="work-card">
+  <div class="work-copy">
+    <p class="work-name">
+      {project.data.client ?? project.data.year}
+    </p>
 
-								<div class="actions">
-									<a href={project.href}>
-										<span>View case study</span>
-										<span aria-hidden="true">-&gt;</span>
-									</a>
-								</div>
-							</div>
+    <h2>{project.data.title}</h2>
 
-							<a class="work-visual" href={project.href}>
-								<Image
-									class={project.imageClass}
-									src={project.image}
-									alt={project.alt}
-									loading="lazy"
-									decoding="async"
-									widths={[640, 960, 1280]}
-									sizes="(max-width: 860px) 100vw, 55vw"
-								/>
-							</a>
-						</article>
-					))
+    <p class="work-description">
+      {project.data.description}
+    </p>
+
+    <div class="actions">
+      <a href={`/work/${project.id}`}>
+        <span>View case study</span>
+        <span aria-hidden="true">-&gt;</span>
+      </a>
+    </div>
+  </div>
+
+  <a
+    class="work-visual"
+    href={`/work/${project.id}`}
+  >
+    <img
+      class="project-preview-image"
+      src={`${import.meta.env.BASE_URL}${project.data.coverImage}`}
+      alt={project.data.coverAlt}
+      loading="lazy"
+      decoding="async"
+    />
+  </a>
+</article>
+))
 				}
 			</section>
-
+<!--
 			<nav class="pagination" aria-label="Works pagination">
 				{
 					totalPages > 1 &&
@@ -76,6 +85,7 @@ const visibleProjects = projects.slice(0, workPageSize);
 						})
 				}
 			</nav>
+-->
 		</main>
 	</div>
 </Layout>

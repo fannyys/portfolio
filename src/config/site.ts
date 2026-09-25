@@ -49,7 +49,6 @@ export const siteConfig: SiteConfig = {
 		{ href: '/resume', label: 'Resume' },
 	],
 	extraPages: [
-		{ href: '/work/nextpoint', label: 'Case Study' },
 		{ href: '/cookies', label: 'Cookies' },
 		{ href: '/privacy', label: 'Privacy' },
 		{ href: '/terms', label: 'Terms' },

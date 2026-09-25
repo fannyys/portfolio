@@ -1,30 +1,53 @@
 media:
-  input: public
-  output: /
+  input: public/images
+  output: /images
+
 content:
-  - name: posts
-    label: Posts
+  - name: projects
+    label: Projects
     type: collection
-    path: src/content/blog
+    path: src/content/projects
+    filename: "{title}.md"
+
     view:
-      fields: [ title, draft, date ]
+      primary: title
+      fields:
+        - title
+        - year
+        - featured
+
     fields:
-      - { name: author, label: Author, type: string }
-      - { name: pubDatetime, label: Date, type: date }
-      - { name: modDatetime, label: Date, type: date }
-      - { name: title, label: Title, type: string, required: true }
-      - { name: ogImage, label: Title, type: string }
-      - { name: slug, label: Slug, type: string }
-      - { name: featured, label: Featured, type: boolean }
-      - { name: draft, label: Draft, type: boolean }
-      - { name: tags, label: Tags, type: string, list: true }
-      - { name: description, label: Description, type: string }
-      - { name: body, label: Body, type: rich-text }
-  - name: about
-    label: About page
-    type: file
-    path: src/pages/about.md
-    fields:
-      - { name: layout, type: string, hidden: true, default: "../layouts/AboutLayout.astro" }
-      - { name: title, label: Title, type: string }
-      - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
+      - name: title
+        label: Project title
+        type: string
+        required: true
+
+      - name: description
+        label: Short description
+        type: text
+
+      - name: coverImage
+        label: Cover image
+        type: image
+
+      - name: year
+        label: Year
+        type: string
+
+      - name: role
+        label: Role
+        type: string
+
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+
+      - name: featured
+        label: Featured project
+        type: boolean
+        default: false
+
+      - name: body
+        label: Case study
+        type: rich-text

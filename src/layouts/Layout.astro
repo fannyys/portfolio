@@ -13,6 +13,7 @@ const {
 	schema,
 } = Astro.props;
 
+const base = import.meta.env.BASE_URL;
 const canonicalUrl = new URL(Astro.url.pathname, siteConfig.siteUrl).toString();
 const ogImageUrl = new URL(siteConfig.ogImage, siteConfig.siteUrl).toString();
 const schemaData =
@@ -51,13 +52,16 @@ const schemaData =
 ---
 
 <!doctype html>
-<html lang={siteConfig.locale}>
+<html
+  lang={siteConfig.locale}
+  style={`--manrope-font-url: url('${base}fonts/manrope-latin-wght-normal.woff2')`}
+>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="color-scheme" content="light dark" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<meta name="keywords" content={siteConfig.keywords.join(', ')} />
@@ -78,13 +82,13 @@ const schemaData =
 		<meta name="twitter:image" content={ogImageUrl} />
 		<link
 			rel="preload"
-			href="/fonts/manrope-latin-wght-normal.woff2"
+			href={`${import.meta.env.BASE_URL}fonts/manrope-latin-wght-normal.woff2`}
 			as="font"
 			type="font/woff2"
 			crossorigin
 		/>
 		<title>{title}</title>
-		<link rel="stylesheet" href="/cookie-consent.css" />
+		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}cookie-consent.css`} />
 		<script type="application/ld+json" set:html={JSON.stringify(schemaData)}></script>
 		<script is:inline>
 			(() => {
@@ -101,7 +105,7 @@ const schemaData =
 	<body>
 		<slot />
 		<SiteFooter showCta={showFooterCta} />
-		<script src="/cookie-consent.js" defer></script>
+		<script src={`${import.meta.env.BASE_URL}cookie-consent.js`} defer></script>
 		<script is:inline>
 			(() => {
 				const storageKey = 'maria-theme';
@@ -147,7 +151,7 @@ const schemaData =
 		font-style: normal;
 		font-display: optional;
 		font-weight: 200 800;
-		src: url('/fonts/manrope-latin-wght-normal.woff2') format('woff2-variations');
+		src: var(--manrope-font-url) format('woff2-variations');
 		unicode-range:
 			U+0000-00FF,
 			U+0131,

@@ -18,8 +18,8 @@ if (usingFallbackSiteUrl) {
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.siteUrl,
-	integrations: [
+	 site: 'https://fanny.github.io',
+   base: '/portfolio',integrations: [
 		mdx(),
 		sitemap({
 			filter(page) {
