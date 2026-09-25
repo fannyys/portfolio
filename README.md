@@ -1,158 +1,221 @@
-# AstroPaper 📄
+# Maria - Astro Theme for UI/UX and Product Designers
 
-![AstroPaper](public/astropaper-og.jpg)
-![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
+[![Maria theme preview](https://raw.githubusercontent.com/andreialba/maria/main/public/screenshot.webp)](https://maria-lake.vercel.app/)
 
-AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
+[![Astro 7](https://img.shields.io/badge/Astro-7-FF5D01?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
+[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Configured-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-84cc16?style=for-the-badge)](./LICENSE)
 
-This theme follows best practices and provides accessibility out of the box. Light and dark mode are supported by default. Moreover, additional color schemes can also be configured.
+**Preview:** [maria-lake.vercel.app](https://maria-lake.vercel.app/)
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README Documentation Section](#-documentation) for more info.
+Maria is a clean Astro portfolio theme for UI/UX designers, product designers, and visual product thinkers.
 
-## 🔥 Features
+It includes:
 
-- [x] type-safe markdown
-- [x] super fast performance
-- [x] accessible (Keyboard/VoiceOver)
-- [x] responsive (mobile ~ desktops)
-- [x] SEO-friendly
-- [x] light & dark mode
-- [x] fuzzy search
-- [x] draft posts & pagination
-- [x] sitemap & rss feed
-- [x] followed best practices
-- [x] highly customizable
-- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
+- a polished portfolio homepage
+- a dedicated Works page with pagination
+- a sample case study page
+- About and Resume pages
+- light and dark mode with a persistent header icon toggle
+- cookie consent banner with saved preferences and a footer re-open action
+- self-hosted tool logos on the Resume page
+- Privacy, Terms, and 404 pages
+- a dedicated Cookie Policy page
+- shared header/footer/navigation
+- Astro-optimized responsive portfolio images
+- MDX support
+- sitemap generation
+- Open Graph and Twitter meta tags
+- structured data defaults
+- Netlify and Vercel config
 
-_Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
+## Tech Stack
 
-## ✅ Lighthouse Score
+- Astro 7
+- Tailwind CSS 4 via Vite plugin
+- MDX
+- `@fontsource-variable/manrope`
 
-<p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
-    <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
-  <a>
-</p>
-
-## 🚀 Project Structure
-
-Inside of AstroPaper, you'll see the following folders and files:
+## Getting Started
 
 ```bash
-/
-├── public/
-│   ├── assets/
-│   │   └── logo.svg
-│   │   └── logo.png
-│   └── favicon.svg
-│   └── astropaper-og.jpg
-│   └── robots.txt
-│   └── toggle-theme.js
-├── src/
-│   ├── assets/
-│   │   └── socialIcons.ts
-│   ├── components/
-│   ├── content/
-│   │   |  blog/
-│   │   |    └── some-blog-posts.md
-│   │   └── config.ts
-│   ├── layouts/
-│   └── pages/
-│   └── styles/
-│   └── utils/
-│   └── config.ts
-│   └── types.ts
-└── package.json
+npm install
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-All blog posts are stored in `src/content/blog` directory.
-
-## 📖 Documentation
-
-Documentation can be read in two formats\_ _markdown_ & _blog post_.
-
-- Configuration - [markdown](src/content/blog/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/content/blog/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/content/blog/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
-- Predefined Color Schemes - [markdown](src/content/blog/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
-
-> For AstroPaper v1, check out [this branch](https://github.com/satnaing/astro-paper/tree/astro-paper-v1) and this [live URL](https://astro-paper-v1.astro-paper.pages.dev/)
-
-## 💻 Tech Stack
-
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
-**Component Framework** - [ReactJS](https://reactjs.org/)  
-**Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma](https://figma.com)  
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
-**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
-**Linting** - [ESLint](https://eslint.org)
-
-## 👨🏻‍💻 Running Locally
-
-The easiest way to run this project locally is to run the following command in your desired directory.
+Build for production:
 
 ```bash
-# npm 6.x
-npm create astro@latest --template satnaing/astro-paper
-
-# npm 7+, extra double-dash is needed:
-npm create astro@latest -- --template satnaing/astro-paper
-
-# yarn
-yarn create astro --template satnaing/astro-paper
+npm run build
 ```
 
-## Google Site Verification (optional)
-
-You can easily add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) in AstroPaper using environment variable. This step is optional. If you don't add the following env variable, the google-site-verification tag won't appear in the html `<head>` section.
+Preview the production build locally:
 
 ```bash
-# in your environment variable file (.env)
-PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-site-verification-value
+npm run preview
 ```
 
-## 🧞 Commands
+## Template Setup
 
-All commands are run from the root of the project, from a terminal:
+The main template settings live in:
 
-> **_Note!_** For `Docker` commands we must have it [installed](https://docs.docker.com/engine/install/) in your machine.
+- [src/config/site.ts](./src/config/site.ts)
 
-| Command                              | Action                                                                                                                           |
-| :----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `npm install`                        | Installs dependencies                                                                                                            |
-| `npm run dev`                        | Starts local dev server at `localhost:4321`                                                                                      |
-| `npm run build`                      | Build your production site to `./dist/`                                                                                          |
-| `npm run preview`                    | Preview your build locally, before deploying                                                                                     |
-| `npm run format:check`               | Check code format with Prettier                                                                                                  |
-| `npm run format`                     | Format codes with Prettier                                                                                                       |
-| `npm run sync`                       | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `npm run cz`                         | Commit code changes with commitizen                                                                                              |
-| `npm run lint`                       | Lint with ESLint                                                                                                                 |
-| `docker compose up -d`               | Run AstroPaper on docker, You can access with the same hostname and port informed on `dev` command.                              |
-| `docker compose run app npm install` | You can run any command above into the docker container.                                                                         |
+Update this file before publishing:
 
-> **_Warning!_** Windows PowerShell users may need to install the [concurrently package](https://www.npmjs.com/package/concurrently) if they want to [run diagnostics](https://docs.astro.build/en/reference/cli-reference/#astro-check) during development (`astro check --watch & astro dev`). For more info, see [this issue](https://github.com/satnaing/astro-paper/issues/113).
+- `name`
+- `title`
+- `description`
+- `email`
+- `authorName`
+- `authorRole`
+- social links
 
-## ✨ Feedback & Suggestions
+Set your production domain with an environment variable before publishing:
 
-If you have any suggestions/feedback, you can contact me via [my email](mailto:contact@satnaing.dev). Alternatively, feel free to open an issue if you find bugs or want to request new features.
+- `SITE_URL=https://your-domain.com`
+- or `PUBLIC_SITE_URL=https://your-domain.com`
 
-## 📜 License
+This keeps canonical URLs, `robots.txt`, and the sitemap aligned without editing source for each environment.
 
-Licensed under the MIT License, Copyright © 2023
+## SEO
 
----
+The template includes:
 
-Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+- canonical URLs
+- meta descriptions
+- keyword meta
+- Open Graph tags
+- Twitter card tags
+- sitemap generation
+- dynamic `robots.txt`
+- JSON-LD structured data defaults
+- `noindex` handling for the 404 page
+
+Main SEO files:
+
+- [src/layouts/Layout.astro](./src/layouts/Layout.astro)
+- [astro.config.mjs](./astro.config.mjs)
+- [src/pages/robots.txt.ts](./src/pages/robots.txt.ts)
+- [public/og-image.svg](./public/og-image.svg)
+
+## Cookies and Consent
+
+The theme includes a client-side cookie consent system with:
+
+- a bottom banner for first visit consent
+- a preferences modal with essential, analytics, and marketing categories
+- saved consent in `localStorage` under `maria-cookie-consent`
+- a footer `Cookie Preferences` button for reopening the modal
+- a `Cookies` policy page at `/cookies`
+
+The theme also saves the visitor's color theme in `localStorage` under `maria-theme`.
+
+### How consent works
+
+- Essential storage is always active because it remembers theme and consent choices.
+- Analytics and marketing are optional categories and default to off until the visitor opts in.
+- The consent UI works out of the box even if you have not connected analytics or marketing tools yet.
+
+### Client API
+
+The consent script exposes `window.mariaCookieConsent` in the browser:
+
+```js
+window.mariaCookieConsent.getConsent();
+window.mariaCookieConsent.hasConsent();
+window.mariaCookieConsent.canUse('analytics');
+window.mariaCookieConsent.canUse('marketing');
+window.mariaCookieConsent.openPreferences();
+```
+
+Whenever a visitor updates their preferences, the site dispatches:
+
+```js
+window.addEventListener('maria:cookieConsentChanged', (event) => {
+  console.log(event.detail);
+});
+```
+
+### Hooking in analytics or marketing scripts
+
+Only load optional third-party scripts after checking consent. Example:
+
+```html
+<script>
+  if (window.mariaCookieConsent?.canUse('analytics')) {
+    // load your analytics script here
+  }
+
+  window.addEventListener('maria:cookieConsentChanged', (event) => {
+    if (event.detail.analytics) {
+      // load or re-enable analytics here
+    }
+  });
+</script>
+```
+
+If you add a new provider, also update:
+
+- [src/pages/cookies.astro](./src/pages/cookies.astro)
+- [src/pages/privacy.astro](./src/pages/privacy.astro)
+- banner/modal copy in [public/cookie-consent.js](./public/cookie-consent.js)
+
+## Content and Pages
+
+Theme behavior:
+
+- the site respects the visitor's system color scheme by default
+- the header includes an icon-only theme toggle for switching between light and dark mode
+- the selected theme is saved in `localStorage`
+
+Main pages:
+
+- `/`
+- `/about`
+- `/resume`
+- `/work`
+- `/work/nextpoint`
+- `/privacy`
+- `/cookies`
+- `/terms`
+- `/404`
+
+At the moment, `Nextpoint` is the only fully built case study page in the theme. The other homepage project cards intentionally point to `/work/nextpoint` as placeholders until you add their own case study pages.
+
+## Images and Assets
+
+Portfolio images live in:
+
+- [src/assets/images](./src/assets/images)
+
+Tool logos live in:
+
+- [src/assets/logos](./src/assets/logos)
+
+Notes:
+
+- Portfolio and case study screenshots use Astro's image pipeline for responsive optimized output.
+- Tool logos are self-hosted SVGs.
+- `public/` is reserved for files that should be served as-is, such as favicons and the Open Graph image.
+- Cookie consent assets live in [public/cookie-consent.js](./public/cookie-consent.js) and [public/cookie-consent.css](./public/cookie-consent.css).
+
+## Deployment
+
+Included config:
+
+- [netlify.toml](./netlify.toml)
+- [vercel.json](./vercel.json)
+
+If you only deploy to one platform, delete the other config file before wiring up CI so platform auto-detection stays predictable.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+## Notes
+
+- Replace the example project copy and images with your own work.
+- Set `SITE_URL` or `PUBLIC_SITE_URL` before deploying so SEO URLs do not point to the demo domain.
+- The social share image is a template default and can be replaced with your own branded preview.
