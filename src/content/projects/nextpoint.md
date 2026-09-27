@@ -1,23 +1,17 @@
 ---
-title: "Designing a legal dashboard that makes AI summaries feel useful, legible, and trustworthy."
-description: "A clearer dashboard for legal teams working with transcripts, summaries, and case activity."
-client: "Nextpoint"
+title: Designing a legal dashboard that makes AI summaries feel useful, legible,
+  and trustworthy.
+description: A clearer dashboard for legal teams working with transcripts,
+  summaries, and case activity.
+coverImage: /images/1220448.jpeg
 year: "2026"
-role: "Lead UI/UX Designer"
-
-coverImage: "images/projects/nextpoint.webp"
-coverAlt: "Nextpoint dashboard showing transcript metrics, AI summary, and recent transcript activity"
-
+role: Lead UI/UX Designer
 tags:
   - UX
   - UI
   - Product Design
-
 featured: true
-order: 1
-background: "lime"
 ---
-
 ## Overview
 
 The original experience surfaced the right information, but not with enough priority.
@@ -43,3 +37,4 @@ The redesign focused on stronger grouping, more breathing room, and clearer cont
 - Clarified the relationship between transcripts, summaries, and open matters.
 - Made the dashboard easier to scan by separating signals from supporting detail.
 - Shifted the AI summary area from a passive widget into a more actionable next step.
+
