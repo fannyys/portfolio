@@ -25,15 +25,15 @@ const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
 
 export const siteConfig: SiteConfig = {
-	name: 'Maria',
-	title: 'Maria | Astro Theme for UI/UX Designer Portfolios',
+	name: 'Fanny',
+	title: 'Fanny - UI/UX Designer Portfolio',
 	description:
 		'A clean Astro theme for UI/UX designer portfolios, case studies, and modern product design presentations.',
 	// Set SITE_URL or PUBLIC_SITE_URL to keep canonicals, robots.txt, and the sitemap aligned in each environment.
 	siteUrl: normalizedSiteUrl,
 	email: 'hello@maria.com',
-	locale: 'en-US',
-	authorName: 'Maria',
+	locale: 'sv-SE',
+	authorName: 'Fanny',
 	authorRole: 'UX Designer',
 	keywords: [
 		'Astro UI UX portfolio theme',
