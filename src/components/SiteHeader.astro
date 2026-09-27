@@ -1,13 +1,14 @@
 ---
 import { siteConfig } from '../config/site';
-const currentPath = Astro.url.pathname || '/';
+import { withBase } from '../utils/paths';
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
 const menuPanelId = 'shared-menu-panel';
 const mobileMenuPanelId = 'shared-mobile-menu-panel';
 const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 ---
 
 <header class="shared-header">
-	<a class="shared-brand" href={import.meta.env.BASE_URL} aria-label={`${siteConfig.name} homepage`}>
+	<a class="shared-brand" href={withBase('/')} aria-label={`${siteConfig.name} homepage`}>
 		<span class="shared-brand-mark">{siteConfig.name}</span>
 	</a>
 
@@ -28,14 +29,14 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 					aria-controls={menuPanelId}
 				>
 					<span>Other</span>
-					<img src={`${import.meta.env.BASE_URL}icons/chevron-down.svg`} alt="" width="16" height="16" />
+					<img src={withBase('/icons/chevron-down.svg')} alt="" width="16" height="16" />
 				</button>
 				<div class="shared-menu-panel" id={menuPanelId} role="menu" aria-label="More navigation pages">
-					{siteConfig.extraPages.map((link) => (
-						<a href={link.href} role="menuitem">
-							{link.label}
-						</a>
-					))}
+				{siteConfig.extraPages.map((link) => (
+				<a href={withBase(link.href)} role="menuitem">
+					{link.label}
+				</a>
+				))}
 				</div>
 			</div>
 		</nav>
@@ -96,11 +97,11 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 			</summary>
 
 			<nav class="shared-mobile-panel" id={mobileMenuPanelId} aria-label="Mobile navigation">
-				<a class="shared-mobile-brand" href={import.meta.env.BASE_URL} aria-label={`${siteConfig.name} homepage`}>
+				<a class="shared-mobile-brand" href={withBase('/')} aria-label={`${siteConfig.name} homepage`}>
 					{siteConfig.name}
 				</a>
 
-				{siteConfig.navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+				{siteConfig.navLinks.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
 
 				<details class="shared-mobile-submenu">
 					<summary
@@ -109,10 +110,10 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 						aria-controls={mobileSubmenuPanelId}
 					>
 						<span>Other</span>
-						<img src={`${import.meta.env.BASE_URL}icons/chevron-down.svg`} alt="" width="16" height="16" />
+						<img src={withBase('/icons/chevron-down.svg')} alt="" width="16" height="16" />
 					</summary>
 					<div class="shared-mobile-submenu-panel" id={mobileSubmenuPanelId}>
-						{siteConfig.extraPages.map((link) => <a href={link.href}>{link.label}</a>)}
+						{siteConfig.extraPages.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
 					</div>
 				</details>
 
