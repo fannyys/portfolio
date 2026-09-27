@@ -14,11 +14,18 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 
 	<div class="shared-header-actions">
 		<nav class="shared-nav shared-nav-desktop" aria-label="Primary navigation">
-			{siteConfig.navLinks.map((link) => (
-				<a href={link.href} aria-current={link.href === currentPath ? 'page' : undefined}>
-					{link.label}
+			{siteConfig.navLinks.map((link) => {
+			const href = withBase(link.href);
+
+			return (
+				<a
+				href={href}
+				aria-current={href.replace(/\/$/, '') === currentPath ? 'page' : undefined}
+				>
+				{link.label}
 				</a>
-			))}
+			);
+			})}
 
 			<div class="shared-menu">
 				<button
