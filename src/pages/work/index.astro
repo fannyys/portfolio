@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import { withBase } from '../../utils/paths';
 
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
@@ -42,7 +43,7 @@ const visibleProjects = projects;
     </p>
 
     <div class="actions">
-      <a href={`/work/${project.id}`}>
+      <a href={withBase(`/work/${project.id}`)}>
         <span>View case study</span>
         <span aria-hidden="true">-&gt;</span>
       </a>
@@ -51,11 +52,11 @@ const visibleProjects = projects;
 
   <a
     class="work-visual"
-    href={`/work/${project.id}`}
+    href={withBase(`/work/${project.id}`)}
   >
     <img
       class="project-preview-image"
-      src={`${import.meta.env.BASE_URL}${project.data.coverImage}`}
+      src={withBase(project.data.coverImage)}
       alt={project.data.coverAlt}
       loading="lazy"
       decoding="async"
