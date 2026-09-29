@@ -6,5 +6,6 @@ year: "2025"
 role: Designer
 tags:
   - UI
+order: 3
 featured: true
 ---
