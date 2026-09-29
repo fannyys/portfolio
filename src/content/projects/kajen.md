@@ -9,6 +9,7 @@ tags:
   - UI
   - Figma
 featured: true
+background: lavender
 ---
 efjowjefwp
 
