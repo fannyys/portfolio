@@ -1,3 +1,7 @@
+media:
+  input: public/images
+  output: /images
+
 content:
   - name: projects
     label: Projects
