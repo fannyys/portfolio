@@ -12,6 +12,7 @@ tags:
   - Product Design
 order: 1
 featured: true
+background: mint
 ---
 ## Overview
 
