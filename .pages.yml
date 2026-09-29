@@ -53,20 +53,22 @@ content:
         type: string
         list: true
 
-      - name: featured
-        label: Featured project
-        type: boolean
-        default: false
-
       - name: order
         label: Display order
         type: number
 
+      - name: featured
+        label: Featured on homepage
+        type: boolean
+        default: false
+        description: Show this project as a featured card on the homepage.
+
       - name: background
-        label: Card background
+        label: Featured card background
         type: select
-        required: true
+        description: Only used when "Featured on homepage" is enabled.
         options:
+          placeholder: Select a card color
           values:
             - name: lime
               label: Lime
