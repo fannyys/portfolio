@@ -1,7 +1,3 @@
-media:
-  input: public/images
-  output: /images
-
 content:
   - name: projects
     label: Projects
@@ -15,6 +11,7 @@ content:
         - title
         - year
         - featured
+        - background
 
     fields:
       - name: title
@@ -25,18 +22,31 @@ content:
       - name: description
         label: Short description
         type: text
+        required: true
+
+      - name: client
+        label: Client
+        type: string
 
       - name: coverImage
         label: Cover image
         type: image
+        required: true
+
+      - name: coverAlt
+        label: Cover image alt text
+        type: string
+        description: Describe the image for accessibility.
 
       - name: year
         label: Year
         type: string
+        required: true
 
       - name: role
         label: Role
         type: string
+        required: true
 
       - name: tags
         label: Tags
@@ -47,6 +57,10 @@ content:
         label: Featured project
         type: boolean
         default: false
+
+      - name: order
+        label: Display order
+        type: number
 
       - name: background
         label: Card background
