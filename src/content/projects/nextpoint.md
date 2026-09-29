@@ -3,6 +3,7 @@ title: Designing a legal dashboard that makes AI summaries feel useful, legible,
   and trustworthy.
 description: A clearer dashboard for legal teams working with transcripts,
   summaries, and case activity.
+client: Test client
 coverImage: /images/1220448.jpeg
 year: "2026"
 role: Lead UI/UX Designer
