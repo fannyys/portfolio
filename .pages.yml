@@ -48,6 +48,21 @@ content:
         type: boolean
         default: false
 
+      - name: background
+        label: Card background
+        type: select
+        required: true
+        options:
+          values:
+            - name: lime
+              label: Lime
+            - name: cyan
+              label: Cyan
+            - name: lavender
+              label: Lavender
+            - name: mint
+              label: Mint
+
       - name: body
         label: Case study
         type: rich-text
