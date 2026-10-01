@@ -20,33 +20,33 @@ export type SiteConfig = {
 	socialLinks: SiteLink[];
 };
 
-const defaultSiteUrl = 'https://maria-lake.vercel.app';
+const defaultSiteUrl = 'https://fannyys.github.io/portfolio/';
 const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
 
 export const siteConfig: SiteConfig = {
 	name: 'Fanny',
-	title: 'Fanny - UI/UX Designer Portfolio',
+	title: 'Fanny - UX/UI Designer Portfolio',
 	description:
 		'A clean Astro theme for UI/UX designer portfolios, case studies, and modern product design presentations.',
 	// Set SITE_URL or PUBLIC_SITE_URL to keep canonicals, robots.txt, and the sitemap aligned in each environment.
 	siteUrl: normalizedSiteUrl,
-	email: 'hello@maria.com',
+	email: 'f.liideenn@gmail.com',
 	locale: 'sv-SE',
 	authorName: 'Fanny',
-	authorRole: 'UX Designer',
+	authorRole: 'UX/UI Designer',
 	keywords: [
-		'Astro UI UX portfolio theme',
-		'UI UX designer portfolio template',
-		'Astro portfolio template',
-		'product designer portfolio theme',
-		'case study portfolio theme',
+		// 'Astro UI UX portfolio theme',
+		// 'UI UX designer portfolio template',
+		// 'Astro portfolio template',
+		// 'product designer portfolio theme',
+		// 'case study portfolio theme',
 	],
 	ogImage: '/og-image.svg',
 	navLinks: [
-		{ href: '/work', label: 'Work' },
-		{ href: '/about', label: 'About' },
-		{ href: '/resume', label: 'Resume' },
+		{ href: '/work', label: 'Projekt' },
+		{ href: '/about', label: 'Om mig' },
+		{ href: '/resume', label: 'CV' },
 	],
 	extraPages: [
 		{ href: '/cookies', label: 'Cookies' },
@@ -60,7 +60,7 @@ export const siteConfig: SiteConfig = {
 		{ href: '/terms', label: 'Terms' },
 	],
 	socialLinks: [
-		{ href: 'https://www.linkedin.com/', label: 'LinkedIn' },
-		{ href: 'https://dribbble.com/', label: 'Dribbble' },
+		{ href: 'https://www.linkedin.com/in/fannylidenolsson/', label: 'LinkedIn' },
+		// { href: 'https://dribbble.com/', label: 'Dribbble' },
 	],
 };
