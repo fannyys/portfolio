@@ -24,3 +24,4 @@ Vi tog fram förslag på en mer dynamisk och användarvänlig webbplats med stor
 En del av projektet var även att ta fram en interaktiv kampanj. Vi skapade Kajen-kampen, en tävling på Instagram och TikTok där en gåta eller rebus publicerades varje vecka och ledde deltagarna till en gömd QR-kod. Den som först löste gåtan vann priser som rabattkuponger eller festivalbiljetter. Kampanjen avslutades med innehåll som lyfte fram festivalens artister och evenemang.
 
 Min roll i projektet var utvecklingsansvarig, vilket innebar att jag ansvarade för att webbplatsens utveckling drevs framåt enligt planeringen. Jag var även delaktig i research och analys samt i arbetet med att omsätta designen till en fungerande webbplats.
+
