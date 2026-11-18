@@ -101,7 +101,7 @@ const caseStudySchema = [
     <main id="main-content">
       <section class="case-hero">
         <p class="eyebrow">
-          <a class="breadcrumb-link" href={withBase('/work')}>Case Study</a>
+          <a class="breadcrumb-link" href={withBase('/work')}>Utvalda projekt</a>
           <span class="breadcrumb-separator" aria-hidden="true">/</span>
           <span>{client ?? title}</span>
         </p>
@@ -116,18 +116,18 @@ const caseStudySchema = [
       <section class="meta-strip" id="overview">
         {client && (
           <div class="meta-item">
-            <p class="meta-label">Client</p>
+            <p class="meta-label">Kund</p>
             <p class="meta-value">{client}</p>
           </div>
         )}
 
         <div class="meta-item">
-          <p class="meta-label">Completed</p>
+          <p class="meta-label">Slutförd</p>
           <p class="meta-value">{year}</p>
         </div>
 
         <div class="meta-item">
-          <p class="meta-label">Role</p>
+          <p class="meta-label">Roll</p>
           <p class="meta-value">{role}</p>
         </div>
       </section>
