@@ -3,6 +3,7 @@ title: Kajen
 description: Ett kreativt grupprojekt där vi utvecklade en visuell identitet,
   webbplats och interaktiv kampanj för att stärka musikfestivalen Kajens
   digitala närvaro.
+client: Examensprojekt
 coverImage: /images/alkemade-blommor.jpg
 year: "2025"
 role: Designer
