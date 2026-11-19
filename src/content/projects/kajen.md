@@ -31,7 +31,5 @@ En del av projektet var även att ta fram en interaktiv kampanj. Vi skapade Kaje
 
 ![](/images/kajenmobilkamp.jpg)
 
-![](/portfolio/images/kajenmobilkamp-1.jpg)
-
 Min roll i projektet var utvecklingsansvarig, vilket innebar att jag ansvarade för att webbplatsens utveckling drevs framåt enligt planeringen. Jag var även delaktig i research och analys samt i arbetet med att omsätta designen till en fungerande webbplats.
 
