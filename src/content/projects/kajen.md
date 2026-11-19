@@ -5,6 +5,7 @@ description: Ett kreativt grupprojekt där vi utvecklade en visuell identitet,
   digitala närvaro.
 client: Examensprojekt
 coverImage: /portfolio/images/kajenomslag.jpg
+coverAlt: Omslagsbild med urklipp av olika delar från webbsidan Kajen
 year: "2025"
 role: Designer/Utvecklare
 tags:
