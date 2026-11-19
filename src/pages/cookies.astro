@@ -18,51 +18,45 @@ import SiteHeader from '../components/SiteHeader.astro';
 			<header class="legal-header">
 				<h1>Cookie Policy</h1>
 				<p class="legal-intro">
-					This page explains what the Maria theme stores in the browser, how visitor consent is
-					saved, and how optional categories like analytics or marketing should be handled.
+					Den här sidan förklarar vilken information som sparas i webbläsaren, hur besökarens samtycke lagras och hur valfria kategorier, såsom analys och marknadsföring, ska hanteras.
 				</p>
-				<p class="legal-updated">Last updated: May 31, 2026</p>
+				<p class="legal-updated">Senast uppdaterad: 31 Maj, 2026</p>
 			</header>
 
 			<article class="legal-content">
 				<section>
-					<h2>What This Theme Stores</h2>
+					<h2>Vad den här portfolion sparar</h2>
 					<p>
-						By default, the theme stores two small browser-based preference records on the
-						visitor's device: the selected color theme and the cookie consent preferences.
+						Som standard sparar portfolio-webbplatsen två mindre inställningsuppgifter i besökarens webbläsare: valt färgtema och inställningar för cookiesamtycke.
 					</p>
 					<p>
-						These values are saved in <code>localStorage</code>, not sent automatically with each
-						page request, and are used only to remember visitor choices in the current browser.
+						Dessa uppgifter sparas i webbläsarens <code>localStorage</code>, skickas inte automatiskt med varje sidförfrågan och används endast för att komma ihåg besökarens val i den aktuella webbläsaren.
 					</p>
 				</section>
 
 				<section>
-					<h2>Consent Categories</h2>
+					<h2>Samtyckeskategorier</h2>
 					<p>
-						The consent interface includes an always-active essential category plus optional
-						analytics and marketing categories.
+						Samtyckesinställningarna omfattar en alltid aktiv kategori för nödvändiga cookies samt valfria kategorier för analys och marknadsföring.
 					</p>
 					<p>
-						In the Maria theme, analytics and marketing are placeholders until you connect real
-						tools. The banner and modal still work now, so those tools can be gated behind
-						consent when you add them later.
+						I portfolio-webbplatsen är kategorierna för analys och marknadsföring tills vidare platshållare, fram till dess att faktiska verktyg kopplas in. Cookie-bannern och inställningsfönstret fungerar redan nu, vilket innebär att dessa verktyg kan aktiveras först efter att besökaren har lämnat sitt samtycke när de väl läggs till.
 					</p>
 				</section>
 
 				<section>
-					<h2>Stored Keys</h2>
+					<h2>Sparade inställningar</h2>
 					<div class="cookie-records">
 						<article class="cookie-record">
 							<div class="cookie-record-top">
 								<div>
 									<h3><code>maria-theme</code></h3>
-									<p class="cookie-record-label">Local storage</p>
+									<p class="cookie-record-label">Lokal lagring</p>
 								</div>
-								<span class="cookie-badge">Essential</span>
+								<span class="cookie-badge">Nödvändiga</span>
 							</div>
 							<p>
-								Stores whether the visitor last selected light mode or dark mode.
+								Lagrar om besökaren senast valde ljust eller mörkt läge.
 							</p>
 						</article>
 
@@ -70,45 +64,41 @@ import SiteHeader from '../components/SiteHeader.astro';
 							<div class="cookie-record-top">
 								<div>
 									<h3><code>maria-cookie-consent</code></h3>
-									<p class="cookie-record-label">Local storage</p>
+									<p class="cookie-record-label">Lokal lagring</p>
 								</div>
-								<span class="cookie-badge">Essential</span>
+								<span class="cookie-badge">Nödvändiga</span>
 							</div>
 							<p>
-								Stores the visitor's consent version, timestamp, and optional analytics /
-								marketing choices for this browser.
+								Sparar versionen av besökarens samtycke, tidpunkten för samtycket samt eventuella val för analys och marknadsföring i den aktuella webbläsaren.
 							</p>
 						</article>
 					</div>
 				</section>
 
 				<section>
-					<h2>How to Change Preferences</h2>
+					<h2>Ändra inställningar</h2>
 					<p>
-						Visitors can reopen the preferences modal any time from the footer's
-						<strong> Cookie Preferences</strong> button.
+						Besökare kan när som helst öppna inställningsfönstret igen via knappen <strong> Cookie Preferences</strong> i sidfoten.
 					</p>
 					<p>
-						You can also open the
+						Du kan också öppna
 						<a
 							href="#"
 							class="cookie-inline-link"
 							onclick="window.dispatchEvent(new CustomEvent('maria:openCookieConsent')); return false;"
 						>
-							cookie preferences modal
+							fönstret för cookieinställningar
 						</a>.
 					</p>
 				</section>
 
 				<section>
-					<h2>Using Consent in Custom Scripts</h2>
+					<h2>Användning av samtycke i egna skript</h2>
 					<p>
-						The theme exposes <code>window.mariaCookieConsent</code> so optional scripts can
-						check whether analytics or marketing is allowed before loading.
+						Portfolion tillhandahåller <code>window.mariaCookieConsent</code>, vilket gör det möjligt för valfria skript att kontrollera om analys eller marknadsföring är tillåten innan de laddas.
 					</p>
 					<p>
-						It also emits a <code>maria:cookieConsentChanged</code> browser event whenever the
-						visitor saves new choices.
+						Den skickar även ut en webbläsarhändelse <code>maria:cookieConsentChanged</code> varje gång besökaren sparar nya inställningar.
 					</p>
 				</section>
 			</article>
