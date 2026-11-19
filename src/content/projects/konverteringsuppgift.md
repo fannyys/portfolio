@@ -18,7 +18,7 @@ Som en del av Optimeringskursen under år två i Digital Design fick vi i uppgif
 
 Det första scenariot utgick från ett företag som hade lanserat sin webbplats men inte nått de förväntade målen. Uppgiften var att granska sidans innehåll, identifiera förbättringsområden och uppdatera befintliga wireframes utifrån en tillhörande checklista.
 
-![](/images/konverteringomslagdesktop2.jpg)
+![](/portfolio/images/konverteringomslagdesktop2.jpg)
 
 Med hjälp av checklistan fick jag själv identifiera vilka åtgärder som var mest relevanta för att förbättra användarbeteendet och öka konverteringen.
 
@@ -29,5 +29,5 @@ De förbättringar jag valde att fokusera på var:
 - **Mer relevanta logotyper:** Byta ut befintliga logotyper mot alternativ som bättre överensstämde med sidans innehåll för att stärka trovärdigheten.
 - **Enhetligt visuellt uttryck:** Anpassa bilder och innehåll för att skapa en mer sammanhängande känsla genom hela webbplatsen.
 
-![](/images/konverteringomslagdesktop.jpg)
+![](/portfolio/images/konverteringomslagdesktop.jpg)
 

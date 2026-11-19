@@ -1,6 +1,6 @@
 media:
   input: public/images
-  output: /images
+  output: /portfolio/images
 
 content:
   - name: projects
