@@ -13,9 +13,9 @@ tags:
   - UI
   - Figma
   - Front-End
-order: 2
+order: 3
 featured: true
-background: lavender
+background: blue
 ---
 Som ett avslutande grupprojekt under utbildningen Digital Design valde jag och mina två gruppmedlemmar att arbeta med Kajen, en musikfestival i centrala Karlstad. Vårt mål var att stärka festivalens digitala närvaro genom att utveckla webbplatsen och sociala medier, så att de bättre förmedlade festivalkänslan och skapade en enhetlig visuell identitet.
 
