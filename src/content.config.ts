@@ -25,7 +25,7 @@ const projects = defineCollection({
     order: z.number().default(0),
 
     background: z
-      .enum(['lime', 'cyan', 'lavender', 'mint'])
+      .enum(['lime', 'cyan', 'lavender', 'mint', 'blue'])
       .default('lime'),
   }),
 });
