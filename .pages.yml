@@ -82,6 +82,8 @@ content:
               label: Lavender
             - name: mint
               label: Mint
+            - name: blue
+              label: Blue
 
       - name: body
         label: Case study
