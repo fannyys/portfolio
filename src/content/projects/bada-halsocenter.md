@@ -1,9 +1,9 @@
 ---
-title: Webbdesign och utveckling Bada Hälsocenter
+title: Webbdesign och utveckling Bada Hälsotempel
 description: Ett frilansprojekt där jag ansvarade för design och utveckling av
-  en webbplats för Bada Hälsocenter, med fokus på att skapa en tydlig,
+  en webbplats för Bada Hälsotempel, med fokus på att skapa en tydlig,
   tilltalande och användarvänlig digital upplevelse för företagets kunder.
-client: Bada Hälsocenter
+client: Bada Hälsotempel
 coverImage: /portfolio/images/badahalsotempelomslag.jpg
 coverAlt: Omslagsbild med översikt över desktop och mobilversion av Bada
   Hälsotempels webbsida
