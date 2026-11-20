@@ -14,7 +14,7 @@ background: lavender
 ---
 Bada Hälsotempel behövde en webbplats som på ett tydligt och tilltalande sätt presenterar verksamheten och dess tjänster. Mitt fokus var att skapa en digital upplevelse som känns harmonisk, lättnavigerad och som ger besökaren en tydlig bild av vad verksamheten erbjuder.
 
-![](/images/badahalsotempeldesktop.jpg)
+![](/portfolio/images/badahalsotempeldesktop.jpg)
 
 **Från design till färdig webb**
 
@@ -22,5 +22,5 @@ Med Figma som designverktyg tog jag fram webbplatsens visuella uttryck, där fä
 
 När designen började ta form byggde jag vidare på den i One.coms CMS, där jag arbetade med att förverkliga layouten och anpassa webbplatsen för olika skärmstorlekar. Arbetet omfattade både det visuella och strukturella, med målet att skapa en webbplats som känns genomtänkt, tillgänglig och enkel att använda.
 
-![](/images/badahalsotempeldesktop2.jpg)
+![](/portfolio/images/badahalsotempeldesktop2.jpg)
 
