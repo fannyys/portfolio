@@ -6,13 +6,15 @@ description: En övning med fokus på konverteringsoptimering för två fiktiva
   förutsättningar för konvertering.
 client: Skoluppgift
 coverImage: /images/konverteringomslagdesktop.jpg
+coverAlt: Omslagsbild med översikt över desktop och mobilversion av slutgiltig design
 year: "2024"
 role: Designer
 tags:
   - UI
   - Figma
+order: 4
 featured: true
-background: lavender
+background: blue
 ---
 Som en del av Optimeringskursen under år två i Digital Design fick vi i uppgift att analysera och förbättra två olika webbplatser utifrån olika scenarier. Det övergripande målet var att öka konverteringen, förbättra användarvänligheten och säkerställa en god tillgänglighet.
 
