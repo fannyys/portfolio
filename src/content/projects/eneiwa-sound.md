@@ -10,8 +10,9 @@ coverAlt: Omslagsbild med urklipp av olika sidor från hemsidan Eneiwa med ett
   instagram inlägg centrerad.
 year: "2026"
 role: Designer/Utvecklare
+order: 1
 featured: true
-background: lavender
+background: blue
 ---
 I arbetet med Eneiwa låg fokus på att skapa en digital närvaro som speglar verksamhetens personliga och harmoniska uttryck. Med tjänster inom Biofield Tuning, Soundhealing, stresshantering och sång vid speciella tillfällen var det viktigt att skapa en design som känns lugn, inbjudande och samtidigt gör informationen lätt att ta till sig.
 
