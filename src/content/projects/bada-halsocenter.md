@@ -9,8 +9,9 @@ coverAlt: Omslagsbild med översikt över desktop och mobilversion av Bada
   Hälsotempels webbsida
 year: "2026"
 role: Designer/Utvecklare
+order: 2
 featured: true
-background: lavender
+background: blue
 ---
 Bada Hälsotempel behövde en webbplats som på ett tydligt och tilltalande sätt presenterar verksamheten och dess tjänster. Mitt fokus var att skapa en digital upplevelse som känns harmonisk, lättnavigerad och som ger besökaren en tydlig bild av vad verksamheten erbjuder.
 
